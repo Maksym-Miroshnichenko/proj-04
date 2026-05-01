@@ -41,6 +41,35 @@ img {
 button {
     cursor: pointer;
 }
+
+
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 40px;
+    padding: 64px 20px;
+}
+@media screen and (min-width: 768px) {
+    .gallery { 
+        gap: 80px;
+        padding: 64px 32px;  
+    }
+}
+@media screen and (min-width:1440px) {
+    .gallery {
+        padding: 64px;   
+    }
+}
+.gallery-description {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 24px;
+}
 .gallery-title {
     font-weight: 400;
     font-size: 36px;
@@ -49,21 +78,104 @@ button {
     letter-spacing: -0.01em;
     text-align: center;
     color: #000000;
-
-    margin-bottom: 24px;
 }
-.gallery-description {
+@media screen and (min-width:1440px) {
+    .gallery-title {
+        font-size: 48px;
+    }
+}
+.gallery-text {
     font-weight: 400;
     font-size: 18px;
 
     line-height: 1.5;
     text-align: center;
     color: #000000;
-
-    margin-bottom: 40px;
 }
 .gallery-items {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+
     gap: 16px;
+}
+.gallery-grid {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* 335x335 */
+}
+
+@media screen and (min-width: 768px) {
+    .gallery-items {
+        grid-template-columns: repeat(2, 340px);
+        justify-content: center;
+        gap: 24px;
+
+        grid-template-areas:
+            "necklace pendant"
+            "necklace earrings"
+            "bracelet earrings";
+    }
+
+    .necklace { 
+        grid-area: necklace;
+        height: 368px;
+    }
+
+    .pendant { 
+        grid-area: pendant;
+        height: 226px;
+    }
+
+    .bracelet { 
+        grid-area: bracelet;
+        height: 216px;
+    }
+    .earrings { 
+        grid-area: earrings;
+        height: 386px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .gallery-items {
+        grid-template-columns: repeat(2, 640px);
+        gap: 32px;
+    }
+
+    .necklace,
+    .earrings {
+        height: 640px;
+    }
+
+    .bracelet,
+    .pendant {
+        height: 426px;
+    }
+}
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.gallery-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/*
+@media screen and (min-width: 768px) {
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 32px;
+        grid-row-gap: 32px;
+    }
+}
+/*
+    .necklace { grid-area: 1 / 1 / 4 / 3; }
+    .pendant { grid-area: 4 / 1 / 6 / 3; }
+    .bracelet { grid-area: 1 / 3 / 3 / 5; }
+    .earrings { grid-area: 3 / 3 / 6 / 5; }
 }
