@@ -1,0 +1,23 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+/* Common styles */
+@import url('./reset.css');
+@import url('./container.css');
+@import url('./animations.css');
+
+/* Sections style */
+@import url('./Header-GS.css');
+@import url('./Hero-AK.css');
+@import url('./About-us-VB.css');
+@import url('./Benefits-AG.css');
+@import url('./Gallery-JD.css');
+@import url('./Testimonials-MM.css');
+@import url('./Contacts-AS.css');
+@import url('./footer-MZ.css');
+
+
+@import url('./Modal-BV.css');
