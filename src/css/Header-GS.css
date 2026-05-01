@@ -51,6 +51,12 @@ font-family: "Mulish",sans-serif;
         display: none;
     }
 
+    .heder-page{
+        max-height: 36px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
     .header-logo {
         max-width: 84px;
         padding-top: 18px;
