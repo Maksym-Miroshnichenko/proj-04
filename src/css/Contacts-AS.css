@@ -220,19 +220,37 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .contacts-text {
+    width: 100%;
+  }
+
+  .contacts-content {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+
   .contacts-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 32px;
-    margin-bottom: 32px;
 
-    margin-left: auto;
     width: 640px;
+    height: 248px;
   }
 
   .contacts-item {
     width: 304px;
+    height: 108px;
+  }
+
+  .contacts-input {
+    max-width: 616px;
+  }
+
+  .contacts-textarea {
+    max-width: 616px;
   }
 
   .contacts-form {
