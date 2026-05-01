@@ -43,10 +43,7 @@ font-family: "Mulish",sans-serif;
 
 
 @media screen and (min-width: 768px) {
-    .container {
-        padding: 0 32px;
-    }
-
+  
     .mob-menu-open {
         display: none;
     }
@@ -59,8 +56,6 @@ font-family: "Mulish",sans-serif;
 
     .header-logo {
         max-width: 84px;
-        padding-top: 18px;
-        padding-bottom: 18px;
     }
 
     .header-nav {
@@ -140,10 +135,7 @@ font-family: "Mulish",sans-serif;
 
 
 @media screen and (min-width: 1440px) {
-    .container {
-        padding: 0 64px;
-    }
-
+    
     .header-nav {
         gap: 32px;
     }
