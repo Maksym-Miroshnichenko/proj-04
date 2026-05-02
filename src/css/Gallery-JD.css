@@ -1,49 +1,3 @@
-.container { 
-    max-width: 375px;
-    padding: 64px 20px;
-    margin: 0 auto;
-}
-@media screen and (min-width: 768px) {
-    .container { 
-        max-width: 768px;
-        padding: 64px 32px;  
-    }
-}    
-
-@media screen and (min-width:1440px) {
-    .container { 
-        max-width: 1440px;
-        padding: 64px;   
-    }
-}
-h1,
-h2,
-h3,
-p {
-    margin: 0;
-}
-ul, ol {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-a {
-    text-decoration:none;
-}
-ul, ol { 
-    list-style-type:none;
-}
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-button {
-    cursor: pointer;
-}
-
-
-
 .gallery {
     display: flex;
     align-items: center;
@@ -93,89 +47,71 @@ button {
     color: #000000;
 }
 .gallery-items {
-    display: grid;
-    grid-template-columns: 1fr;
-
+    display: flex;
+    flex-direction: column;
     gap: 16px;
 }
-.gallery-grid {
-    width: 100%;
-    aspect-ratio: 1 / 1; /* 335x335 */
-}
-
-@media screen and (min-width: 768px) {
-    .gallery-items {
-        grid-template-columns: repeat(2, 340px);
-        justify-content: center;
-        gap: 24px;
-
-        grid-template-areas:
-            "necklace pendant"
-            "necklace earrings"
-            "bracelet earrings";
-    }
-
-    .necklace { 
-        grid-area: necklace;
-        height: 368px;
-    }
-
-    .pendant { 
-        grid-area: pendant;
-        height: 226px;
-    }
-
-    .bracelet { 
-        grid-area: bracelet;
-        height: 216px;
-    }
-    .earrings { 
-        grid-area: earrings;
-        height: 386px;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .gallery-items {
-        grid-template-columns: repeat(2, 640px);
-        gap: 32px;
-    }
-
-    .necklace,
-    .earrings {
-        height: 640px;
-    }
-
-    .bracelet,
-    .pendant {
-        height: 426px;
-    }
-}
-.gallery-img {
+.gallery-link {
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
-.gallery-img img {
+.gallery-link img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
 }
+.img-container-left, .img-container-right {
+    display: flex;
+    flex-direction: column;
 
-/*
+    gap: 16px;
+}
+.necklace,.pendant, .bracelet, .earrings {
+    max-width: 335px;
+    height: auto;
+}
 @media screen and (min-width: 768px) {
-    .gallery-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        grid-column-gap: 32px;
-        grid-row-gap: 32px;
+    .gallery-items {
+    flex-direction: row;
+    gap: 24px;
+    }
+    .img-container-left {
+    gap: 32px; /*24px;*/
+    }
+    .img-container-right {
+    gap: 24px;
+    }
+    .necklace {
+    max-width: 340px;
+    height: 368px;
+    }
+    .pendant {
+    max-width: 340px; 
+    height: 226px; /*234px;*/
+    }
+    .bracelet {
+    max-width: 340px;
+    height: 216px;
+    }
+    .earrings {
+    max-width: 340px;
+    height: 386px;
     }
 }
-/*
-    .necklace { grid-area: 1 / 1 / 4 / 3; }
-    .pendant { grid-area: 4 / 1 / 6 / 3; }
-    .bracelet { grid-area: 1 / 3 / 3 / 5; }
-    .earrings { grid-area: 3 / 3 / 6 / 5; }
+@media screen and (min-width:1440px) {
+    .gallery-items {
+    gap: 32px;
+    }
+     .img-container-right /*, .img-container-left*/ {
+    gap: 32px;
+    }
+    .necklace, .earrings {
+    max-width: 640px;
+    height: auto;
+    }
+    .pendant, .bracelet {
+    max-width: 640px;
+    height: 426px;
+    }
 }
