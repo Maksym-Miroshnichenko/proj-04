@@ -18,20 +18,13 @@
 
 }
 
-.heder-mob-menu{
+.mob-menu-open {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    background-color: transparent;
     cursor: pointer;
     margin-left: auto;
-    width: 48px;
-    height: 48px;
-}
-
-.mob-menu-open {
-    padding: 12px;
+    padding: 4px;
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -55,7 +48,7 @@ font-family: "Mulish",sans-serif;
 
 @media screen and (min-width: 768px) {
   
-    .heder-mob-menu {
+    .mob-menu-open {
         display: none;
     }
 
@@ -92,12 +85,9 @@ font-family: "Mulish",sans-serif;
         align-items: center;
         justify-content: center;
         flex-direction: row;
-        gap: 8px;
         margin-left: auto;
         border: 1px solid #ccc16e;
-        padding: 6px 12px;
-        width: 119px;
-        height: 36px;
+        padding: 6px 18px;
         background-color: #ccc16e;
         font-weight: 500;
         font-size: 16px;
@@ -156,6 +146,6 @@ font-family: "Mulish",sans-serif;
     }
 
     .header-link {
-        width: 192px;
+        padding: 6px 55px;
     }
 }
