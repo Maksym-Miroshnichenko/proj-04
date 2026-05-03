@@ -23,10 +23,12 @@
 
     .hero-container {
     max-width: 335px;
-    margin: 0;
+    /* margin: 0; */
+    align-items: center;
+    justify-self: center;
     }
 
-.title-hero {
+    .title-hero {
     font-family: "Sora",sans-serif;
     color: #fff;
     font-weight: 400;
