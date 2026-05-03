@@ -59,6 +59,7 @@
 
 .text-icon {
   font-family: 'Sora', sans-serif;
+  font-weight: 400;
   font-size: 20px;
   line-height: 1.4;
   letter-spacing: -0.01em;
@@ -69,6 +70,7 @@
 
 .contacts-link {
   font-family: 'Mulish', sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   text-decoration: underline;
@@ -92,6 +94,7 @@
 
 .contacts-lab {
   font-family: 'Mulish', sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   color: #000;
@@ -109,6 +112,7 @@
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   font-family: 'Mulish', sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   color: #000;
@@ -132,6 +136,7 @@
 
 .contacts-input::placeholder {
   font-family: 'Mulish', sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.6);
@@ -146,6 +151,7 @@
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   font-family: 'Mulish', sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   color: #000;
@@ -161,6 +167,7 @@
 
 .contacts-textarea::placeholder {
   font-family: 'Mulish', sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.6);
