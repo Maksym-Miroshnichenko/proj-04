@@ -22,7 +22,14 @@
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
+
+    max-width: 335px;
     gap: 24px;
+}
+@media screen and (min-width: 768px) {
+    .gallery-description {
+        max-width: 768px;
+    }
 }
 .gallery-title {
     font-family: "Sora", sans-serif;
@@ -34,6 +41,7 @@
     text-align: center;
     color: #000000;
 }
+
 @media screen and (min-width:1440px) {
     .gallery-title {
         font-size: 48px;
