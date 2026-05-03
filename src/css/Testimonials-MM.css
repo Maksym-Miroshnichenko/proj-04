@@ -1,38 +1,37 @@
  /* --- Мобільна версія (від 375px) --- */
- .testimonials {
-     padding: 40px 20px;
-     background: #fff;
- }
+.testimonials {
+    padding: 40px 20px;
+    background: #fff;
+}
 
- .testimonials-header {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     gap: 16px;
-     margin-bottom: 32px;
- }
+.testimonials-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+}
 
 .testimonials-title {
     font-family: "Sora", sans-serif;
-        font-weight: 400;
-        font-size: 48px;
-        line-height: 1.2;
-        letter-spacing: -0.01em;
-        text-align: center;
-        color: #000;
-
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #000;
 }
 
- .testimonials-subtitle {
+.testimonials-subtitle {
     font-family: "Mulish", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
     color: #000;
- }
+}
 
- .testimonial-quote {
+.testimonial-quote {
     font-family: "Mulish", sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -40,9 +39,9 @@
     color: #000;
     margin-bottom: 32px;
     flex-grow: 1;
- }
+}
 
-.testimonial-author{
+.testimonial-author {
     font-family: "Mulish", sans-serif;
     font-weight: 600;
     font-size: 16px;
@@ -55,43 +54,29 @@
     margin-top: 0;
 }
 
- /* Список відгуків */
- .testimonials-list {
-     display: grid;
-     grid-template-columns: 1fr;
-     gap: 20px;
-     list-style: none;
-     padding: 0;
- }
-
- .testimonial-item-img img {
-     width: 100%;
-     height: auto;
-     object-fit: cover;
-     display: block;
- }
-
- /* Картка відгуку */
-.testimonial-item-card {
-    background: #f2f2f2;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 32px;
+/* Списки */
+.testimonials-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
- .stars-list {
-     display: flex;
-     gap: 4px;
-     list-style: none;
-     padding: 0;
-     margin-bottom: 16px;
- }
-
- .star-icon-o {
-    fill: transparent;
-    stroke: #000;
-    stroke-width: 2px;
+.testimonials-list:first-of-type {
+    margin-bottom: 24px;
 }
 
+/* Зображення */
+.testimonials-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+/* Картки відгуків */
 .item-card-thomas,
 .item-card-jane {
     background: #f2f2f2;
@@ -104,42 +89,73 @@
     box-sizing: border-box;
 }
 
+/* Зірки */
+.stars-list {
+    display: flex;
+    gap: 4px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 16px;
+}
+
+.star-icon-o {
+    fill: transparent;
+    stroke: #000;
+    stroke-width: 2px;
+}
+
 /* Планшет */
 @media (min-width: 768px) and (max-width: 1439px) {
-    .testimonials-list {
+
+    /* Перший список: img-1, img-2, card-thomas */
+    .testimonials-list:first-of-type {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: 260px;
+        grid-template-columns: 204px 204px 250px;
+        grid-template-rows: 260px;
         gap: 24px;
-        padding: 0 32px;
-        max-width: 768px;
+        width: 706px;
+        margin: 0 auto 24px;
+        list-style: none;
+        padding: 0;
+    }
+
+    .testimonials-list:first-of-type .item-img-1 {
+        grid-column: 1;
+    }
+
+    .testimonials-list:first-of-type .item-img-2 {
+        grid-column: 2;
+    }
+
+    .testimonials-list:first-of-type .item-card-thomas {
+        grid-column: 3;
+    }
+
+    /* Другий список: card-jane, img-3, img-4 */
+    .testimonials-list:last-of-type {
+        display: grid;
+        grid-template-columns: 250px 204px 204px;
+        grid-template-rows: 260px;
+        gap: 24px;
+        width: 706px;
         margin: 0 auto;
+        list-style: none;
+        padding: 0;
     }
 
-    .item-img-1 {
-        grid-area: 1 / 1 / 2 / 2;
+    .testimonials-list:last-of-type .item-card-jane {
+        grid-column: 1;
     }
 
-    .item-img-2 {
-        grid-area: 1 / 2 / 2 / 3;
+    .testimonials-list:last-of-type .item-img-3 {
+        grid-column: 2;
     }
 
-    .item-card-thomas {
-        grid-area: 1 / 3 / 2 / 4;
+    .testimonials-list:last-of-type .item-img-4 {
+        grid-column: 3;
     }
 
-    .item-card-jane {
-        grid-area: 2 / 1 / 3 / 2;
-    }
-
-    .item-img-3 {
-        grid-area: 2 / 2 / 3 / 3;
-    }
-
-    .item-img-4 {
-        grid-area: 2 / 3 / 3 / 4;
-    }
-
+    /* Спільні стилі зображень */
     .testimonials-image {
         width: 100%;
         height: 100%;
@@ -148,8 +164,10 @@
         border: 1px solid rgba(0, 0, 0, 0.2);
     }
 
+    /* Спільні стилі карток */
     .item-card-thomas,
     .item-card-jane {
+        width: auto;
         height: 100%;
         padding: 24px;
         display: flex;
@@ -161,13 +179,60 @@
 
  /* --- Десктопна версія (від 1440px) --- */
  @media (min-width: 1440px) {
-     .testimonials-list {
+     .testimonials-list:first-of-type {
          display: grid;
-         grid-template-columns: repeat(4, 304px);
-         grid-template-rows: repeat(2, 260px);
+         grid-template-columns: 304px 304px 640px;
+         grid-template-rows: 260px;
          gap: 32px;
          padding: 0;
+         margin: 0 auto 32px;
+         list-style: none;
          justify-content: center;
+         width: 1280px;
+     }
+
+     .testimonials-list:first-of-type .item-img-1 {
+         grid-column: 1;
+     }
+
+     .testimonials-list:first-of-type .item-img-2 {
+         grid-column: 2;
+     }
+
+     .testimonials-list:first-of-type .item-card-thomas {
+         grid-column: 3;
+     }
+
+     .testimonials-list:last-of-type {
+         display: grid;
+         grid-template-columns: 640px 304px 304px;
+         grid-template-rows: 260px;
+         gap: 32px;
+         padding: 0;
+         margin: 0 auto;
+         list-style: none;
+         justify-content: center;
+         width: 1280px;
+     }
+
+     .testimonials-list:last-of-type .item-card-jane {
+         grid-column: 1;
+     }
+
+     .testimonials-list:last-of-type .item-img-3 {
+         grid-column: 2;
+     }
+
+     .testimonials-list:last-of-type .item-img-4 {
+         grid-column: 3;
+     }
+
+     .testimonials-image {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         display: block;
+         border: 1px solid rgba(0, 0, 0, 0.2);
      }
 
      .item-card-thomas,
@@ -175,38 +240,10 @@
          width: auto !important;
          max-width: none !important;
          height: 100%;
+         padding: 32px;
          display: flex;
          flex-direction: column;
-         justify-content: center;
-     }
-
-     .item-img-1 {
-         grid-area: 1 / 1 / 2 / 2;
-     }
-
-     .item-img-2 {
-         grid-area: 1 / 2 / 2 / 3;
-     }
-
-     .item-card-thomas {
-         grid-area: 1 / 3 / 2 / 5;
-     }
-
-     .item-card-jane {
-         grid-area: 2 / 1 / 3 / 3;
-     }
-
-     .item-img-3 {
-         grid-area: 2 / 3 / 3 / 4;
-     }
-
-     .item-img-4 {
-         grid-area: 2 / 4 / 3 / 5;
-     }
-
-     .testimonial-item-img img {
-         width: 100%;
-         height: 100%;
-         object-fit: cover;
+         justify-content: space-between;
+         box-sizing: border-box;
      }
  }
