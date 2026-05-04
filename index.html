@@ -2,14 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/proj-04/fovicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/proj-04/assets/fovicon-L706qlH3.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@400,500,600,700&family=Sora&display=swap" rel="stylesheet">
     <script type="module" crossorigin src="/proj-04/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/proj-04/assets/index-B8xkvfW2.css">
+    <link rel="stylesheet" crossorigin href="/proj-04/assets/index-CG6XQZCg.css">
   </head>
   <body>
         <header class="header">
@@ -63,12 +60,81 @@
   </div>
 </section>
 
-      <section>
-    About-us
+          <section class="about-us">
+        <div class="about-container">
+            <div class="about-image-wrapper">
+                <img class="about-image" src="../img/about-mob-1x.jpg"
+                    srcset="../img/about-mob-1x.jpg 1x, ../img/about-des-2x.jpg 2x" width="640" height="456"
+                    alt="Handmade jewelry crafting process" loading="lazy">
+            </div>
+
+            <div class="about-content">
+                <h2 class="about-title">The Artistry Behind Handmade Jewelry</h2>
+                <p class="about-text">Handmade Jewelry began as a passion project, inspired by the beauty of nature and
+                    the
+                    desire to create meaningful pieces. Each item is crafted with love, reflecting our commitment to
+                    sustainability and the unique story of its maker.</p>
+
+                <ul class="about-list">
+                    <li class="about-list-item">
+                        <svg class="about-icon" width="24" height="24" aria-hidden="true">
+                            <use href="../img/symbol-defs.svg#icon-leaf"></use>
+                        </svg>
+                        Inspired by Nature
+                    </li>
+
+                    <li class="about-list-item">
+                        <svg class="about-icon" width="24" height="24" aria-hidden="true">
+                            <use href="../img/symbol-defs.svg#icon-donate-heart"></use>
+                        </svg>
+                        Handcrafted with Love
+                    </li>
+
+                    <li class="about-list-item">
+                        <svg class="about-icon" width="24" height="24" aria-hidden="true">
+                            <use href="../img/symbol-defs.svg#icon-book"></use>
+                        </svg>
+                        Every Piece Tells a Story
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+      <section class="benefits" id="benefits">
+  <div class="container">
+    <h2 class="benefits-title">
+      Discover the Artistry of Unique, Handmade Jewelry Crafted Just for You
+    </h2>
+    <div class="benefits-wrapper">
+      <ul class="benefits-list">
+        <li class="benefits-item">
+          <h3 class="benefits-subtitle">Unique Design</h3>
+          <p class="benefits-item-text">
+            Each piece of jewelry is a unique work of art, handcrafted with love
+            and attention to detail. You won't find anything similar in mass
+            production.
+          </p>
+        </li>
+        <li class="benefits-item">
+          <h3 class="benefits-subtitle">Quality and Reliability</h3>
+          <p class="benefits-item-text">
+            We use only high-quality materials and proven techniques so that
+            your jewelry lasts long and retains its original look.
+          </p>
+        </li>
+        <li class="benefits-item">
+          <h3 class="benefits-subtitle">A Story in Every Detail</h3>
+          <p class="benefits-item-text">
+            Our jewelry isn't just an accessory; it's a story that comes to life
+            in every element. It will add a special charm to your look and make
+            a wonderful gift.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
 </section>
-      <section>
-    Benefits
-</section>
+
       <section>
     <div class="gallery container">
         <div class="gallery-description">
@@ -283,21 +349,22 @@
 </footer>
 
     </footer>
-      <section class="modal">
+      <div class="modal">
 
-    <div class="nav-overlay">
+    <div class="nav-overlay" role="dialog"
+    aria-modal="true" aria-label="Navigation menu">
         <div class="nav-modal">
 
             <div class="nav-m-header">
             <a href="index.html" class="nav-logo-btn">
-                <svg width="149" height="47">
-                    <use href="../img/symbol-defs.svg#icon-Company-Logo"></use>
+                <svg width="149" height="47" aria-label="Company Name">
+                    <use href="/proj-04/assets/symbol-defs-E1NcxM4y.svg#icon-Company-Logo"></use>
                 </svg>
             </a>
 
-                <button type="button" class="nav-close-btn">
+                <button type="button" class="nav-close-btn" aria-label="Close menu">
                     <svg width="12" height="12">
-                        <use href="../img/symbol-defs.svg#icon-close"></use>
+                        <use href="/proj-04/assets/symbol-defs-E1NcxM4y.svg#icon-close"></use>
                     </svg>
                 </button>
             </div>
@@ -320,7 +387,7 @@
         </div>
     </div>
 
-</section>
+</div>
 
   </body>
 </html>
