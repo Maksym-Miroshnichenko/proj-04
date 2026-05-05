@@ -37,8 +37,6 @@ body {
     max-width: 335px;
 }
 
-
-
 .about-title {
     font-family: 'Sora', sans-serif;
     font-weight: 400;
@@ -110,7 +108,7 @@ body {
     color: var(--color-blue-marguerite);
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1439px) {
     .about-us {
         max-width: 100%;
         height: auto;
@@ -120,7 +118,7 @@ body {
         margin: 0 auto;
     }
     .about-content{
-        max-width: 456px;
+        max-width: 704px;
     }
 
     .about-container {
@@ -134,7 +132,7 @@ body {
 
     .about-text {
         font-size: 16px;
-        margin-bottom: 20px;
+        margin-bottom: 24px;
     }
 
     .about-list-item {
@@ -153,7 +151,7 @@ body {
 }
 
 /* MOBILE - 375px */
-@media only screen and (min-width: 1440px) {
+@media (min-width: 1440px) {
     body {
         background-color: #fff;
     }
@@ -189,11 +187,11 @@ body {
 
     .about-text {
         font-size: 14px;
-        margin-bottom: 20px;
+        margin-bottom: 24px;
     }
 
     .about-list {
-        gap: 14px;
+        gap: 24px;
     }
 
     .about-list-item {
