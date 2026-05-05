@@ -63,6 +63,7 @@ body {
   min-height: 100vh;
   margin: 0;
   align-items: var(--font-family);
+  background: white;
 }
 
 main {

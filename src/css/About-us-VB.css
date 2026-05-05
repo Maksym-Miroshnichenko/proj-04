@@ -8,12 +8,10 @@
 
 body {
     font-family: 'Mulish', sans-serif;
-    background-color: #f9f7f4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+   
 }
+
+
 
 .about-us {
     max-width: 1440px;
@@ -97,4 +95,98 @@ body {
     fill: #000;
     stroke: none;
     transition: fill 0.2s ease;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .about-us {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .about-container {
+        padding: 80px 48px;
+        gap: 32px;
+    }
+
+    .about-title {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .about-text {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .about-list-item {
+        font-size: 16px;
+        gap: 10px;
+    }
+
+    .about-icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .about-list {
+        gap: 16px;
+    }
+}
+
+/* MOBILE - 375px */
+@media (max-width: 767px) {
+    body {
+        background-color: #fff;
+    }
+
+    .about-us {
+        max-width: 100%;
+        height: auto;
+        background-color: #fff;
+    }
+
+    .about-container {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 24px;
+    }
+
+    .about-image-wrapper {
+        min-width: auto;
+        width: 100%;
+    }
+
+    .about-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-content {
+        min-width: auto;
+        width: 100%;
+    }
+
+    .about-title {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    .about-text {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .about-list {
+        gap: 14px;
+    }
+
+    .about-list-item {
+        font-size: 14px;
+        gap: 8px;
+    }
+
+    .about-icon {
+        width: 20px;
+        height: 20px;
+    }
 }
