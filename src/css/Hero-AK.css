@@ -1,7 +1,6 @@
 .hero {
     padding-top: 160px;
     padding-bottom: 152px;
-    padding-inline: 20px;
     max-width: 1440px;
     margin: 0 auto;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/hero-fon-mob-1x.jpg) ;
@@ -21,11 +20,6 @@
         
     }
 
-    .hero-container {
-    max-width: 335px;
-    margin: 0 auto;
-    }
-
     .title-hero {
     font-family: "Sora",sans-serif;
     color: #fff;
@@ -34,7 +28,8 @@
     line-height: 1.2;
     letter-spacing: -0.01em;
     margin-bottom: 24px;
-}
+    max-width: 335px;
+    }
 
 .text-hero {
     font-family: "Mulish",sans-serif;
@@ -47,6 +42,7 @@
 
 .btn-hero {
     font-family: "Mulish", sans-serif;
+    max-width: 335px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -76,7 +72,6 @@
     .hero {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), 
     url(../img/hero-fon-tab-1x.jpg);
-    padding-left: 32px;
     padding-bottom: 435px;
 
 
@@ -89,13 +84,16 @@
 }
 
 .hero-container {
-    max-width: 513px;
     margin: 0;
- 
 } 
 
 .title-hero {
  max-width: 513px;
+
+}
+
+.text-hero {
+    max-width: 513px;
 }
 
 .btn-hero {
@@ -103,19 +101,25 @@
 }
 }
 
+
 @media screen and (min-width: 1440px) {
     .hero {
-        padding-top: 224px;
-        padding-bottom: 360px;
-        padding-left: 64px;
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(../img/hero-fon-des-1x.jpg);
+    padding-top: 224px;
+    padding-bottom: 360px;
+      
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../img/hero-fon-des-1x.jpg);
 
     @media screen and (min-resolution: 2x) {
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(../img/hero-fon-des-2x.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../img/hero-fon-des-2x.jpg);
     }
     
+}
+
+.hero-container {
+    max-width: 640px;
+    padding-right: 0;
 }
 
 .title-hero {
@@ -123,7 +127,7 @@
 }
 
 .text-hero {
-    width: 640px;
+    max-width: 640px;
 }
 
 .btn-hero {
