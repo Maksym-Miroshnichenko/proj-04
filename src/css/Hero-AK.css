@@ -2,6 +2,7 @@
     padding-top: 160px;
     padding-bottom: 152px;
     max-width: 1440px;
+    margin: 0 auto;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/hero-fon-mob-1x.jpg) ;
     background-position: center;
     background-size: cover;
