@@ -8,10 +8,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
     
     @media  screen and (min-resolution: 2x) {
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), 
@@ -83,10 +79,6 @@
     }
 }
 
-.hero-container {
-    margin: 0;
-} 
-
 .title-hero {
  max-width: 513px;
 
@@ -115,11 +107,6 @@
     url(../img/hero-fon-des-2x.jpg);
     }
     
-}
-
-.hero-container {
-    max-width: 640px;
-    padding-right: 0;
 }
 
 .title-hero {
