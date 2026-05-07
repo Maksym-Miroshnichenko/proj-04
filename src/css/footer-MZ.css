@@ -1,3 +1,4 @@
+footer,
 .footer {
     padding: 80px 20px;
     background: var(--color-scheme-1-background);
@@ -94,6 +95,7 @@ color: #8668c7;
 
 
 @media screen and (min-width: 768px) {
+    footer,
     .footer {
         padding: 80px 64px;
     }
@@ -122,6 +124,8 @@ color: #8668c7;
     }
 }
 @media screen and (min-width: 1440px) {
+    
+    footer,
     .footer {
         padding: 80px 64px;
     }
